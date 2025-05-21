@@ -14,15 +14,10 @@ echo "the smallest number of the array is ", min($Group);
 // The number must not be a multiple of 7.
 // The number must be greater than 50 and less than 500.
 
-$sum = 1;
+$sum = 0;
 
-// while($i <=1000){
-//     $i /= 3;
-//     echo $i, "<br>";
-//     $i /= 3;
-// };
-
-// for($i=1;$i <=500; $i /= 3){
-//     echo $i;
-//     echo "<br>"
-// };
+ for($i= 1; $i <=1000; $i++){
+    if($i %= 3 || $i %= 5) && ($i % 7 != 7) && ($i >= 50 && $i <=500){
+        echo $i + $sum;
+    };
+ };
